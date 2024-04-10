@@ -28,7 +28,7 @@
     const serverSecret = "2b63b550696ae663dc445ef26e0dff29";
     const kitToken =  ZegoUIKitPrebuilt.generateKitTokenForTest(appID, serverSecret, roomID, userID, userName);
 
-    const zp = ZegoUIKitPrebuilt.create(TOKEN);
+    const zp = ZegoUIKitPrebuilt.create(kitToken);
     zp.joinRoom({
         container: document.querySelector("#root"),
         sharedLinks: [{
